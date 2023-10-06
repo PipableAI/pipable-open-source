@@ -1,0 +1,11 @@
+transformers
+datasets
+trl
+peft
+accelerate
+bitsandbytes
+Flask
+sentencepiece
+scipy
+protobuf
+gdown
