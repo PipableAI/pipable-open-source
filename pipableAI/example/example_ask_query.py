@@ -1,6 +1,6 @@
-from pipable import Pipable
-from pipable.core.postgresql_connector import PostgresConfig, PostgresConnector
-from pipable.llm_client.pipllm import PipLlmApiClient
+from pipableai import Pipable
+from pipableai.core.postgresql_connector import PostgresConfig, PostgresConnector
+from pipableai.llm_client.pipllm import PipLlmApiClient
 
 # Define PostgreSQL configuration
 postgres_config = PostgresConfig(

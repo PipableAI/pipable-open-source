@@ -2,8 +2,8 @@ import json
 
 import requests
 
-from pipable.core.dev_logger import dev_logger
-from pipable.interfaces.llm_api_client_interface import LlmApiClientInterface
+from pipableai.core.dev_logger import dev_logger
+from pipableai.interfaces.llm_api_client_interface import LlmApiClientInterface
 
 
 class PipLlmApiClient(LlmApiClientInterface):

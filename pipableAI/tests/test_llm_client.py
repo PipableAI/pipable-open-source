@@ -7,7 +7,7 @@ from unittest.mock import patch
 root_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_folder)
 
-from pipable.llm_client.pipllm import PipLlmApiClient
+from pipableai.llm_client.pipllm import PipLlmApiClient
 
 
 class TestPipLlmApiClient(unittest.TestCase):
