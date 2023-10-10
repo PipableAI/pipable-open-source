@@ -96,22 +96,22 @@ except Exception as e:
 #### When `table_names` is populated with correct table names:
 
 ```python
-# Generate and execute a query using the language model
 table_names = ["table1", "table2", "table3"]
 question = "List all employees."
+
+# Generate and execute the query
 try:
-    # Generate and execute the query
     result_df = pipable_instance.ask_and_execute(question, table_names)
     print("Query Result:")
     print(result_df)
 except Exception as e:
     print(f"Error: {e}")
 
-# Generate a query using the language model
 table_names = ["table1", "table2", "table3"]
 question = "List all employees."
+
+# Generate the query
 try:
-    # Generate and execute the query
     result_query = pipable_instance.ask(question, table_names)
     print("Query Result:")
     print(result_query)
@@ -121,11 +121,11 @@ except Exception as e:
 #### When `table_names` is an empty list:
 
 ```python
-# Generate a query using the language model
 table_names = []
 question = "List all employees."
+
+# Generate and execute the query
 try:
-    # Generate and execute the query
     result_df = pipable_instance.ask_and_execute(question, table_names)
     print("Query Result:")
     print(result_df)
