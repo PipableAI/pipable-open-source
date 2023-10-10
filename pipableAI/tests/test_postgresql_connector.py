@@ -7,8 +7,8 @@ from unittest.mock import Mock
 root_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_folder)
 
-from pipable.core.postgresql_connector import PostgresConfig, PostgresConnector
-from pipable.interfaces.database_connector_interface import DatabaseConnectorInterface
+from pipableai.core.postgresql_connector import PostgresConfig, PostgresConnector
+from pipableai.interfaces.database_connector_interface import DatabaseConnectorInterface
 
 
 # Define a mock implementation of DatabaseConnectorInterface for testing

@@ -2,9 +2,9 @@
 
 ## About
 
-Pipable is a Python package that simplifies the process of querying a PostgreSQL database. It provides a high-level interface for connecting to a remote PostgreSQL server, generating and executing natural language-based data search queries mapped to SQL queries using a language model.
+Pipable is a Python package that simplifies the process of querying a database. It provides a high-level interface for connecting to a remote database server, generating and executing natural language-based data search queries mapped to database queries using a language model.
 
-## Features
+## Current Features
 
 - **Natural Language Queries**: Express database queries in plain English.
 - **PostgreSQL Integration**: Seamlessly connects to PostgreSQL databases.
@@ -13,34 +13,34 @@ Pipable is a Python package that simplifies the process of querying a PostgreSQL
 
 ## Installation
 
-To install Pipable, you can use `pip3`, Python's package manager. Open your terminal or command prompt and run the following command:
+To install PipableAI, you can use `pip3`, Python's package manager. Open your terminal or command prompt and run the following command:
 
 ```bash
-pip3 install pipable
+pip3 install pipableai
 ```
 
-**Note:** Pipable requires Python 3.7 or higher.
+**Note:** PipableAI requires Python 3.7 or higher.
 
-If you prefer to install Pipable from source, you can clone the GitHub repository and install it using `setup.py`. Navigate to the project directory and run:
+If you prefer to install PipableAI from source, you can clone the GitHub repository and install it using `setup.py`. Navigate to the project directory and run:
 
 ```bash
 python3 setup.py install
 ```
 
-This will install Pipable locally on your system.
+This will install PipableAI locally on your system.
 
 ## Usage
 
-Pipable simplifies the process of connecting to a remote PostgreSQL server, generating SQL queries using a language model, and executing them. This section provides a step-by-step guide on how to use Pipable effectively in your Python projects.
+PipableAI simplifies the process of connecting to a remote db servers, generating SQL queries using a language model, and executing them. This section provides a step-by-step guide on how to use PipableAI effectively in your Python projects.
 
 ### Import Pipable:
 
-To start using Pipable, import the necessary classes and interfaces:
+To start using PipableAI, import the necessary classes:
 
 ```python
-from pipable import Pipable
-from pipable.llm_client.pipllm import PipLlmApiClient
-from pipable.core.postgresql_connector import PostgresConfig, PostgresConnector
+from pipableai import Pipable
+from pipableai.llm_client.pipllm import PipLlmApiClient
+from pipableai.core.postgresql_connector import PostgresConfig, PostgresConnector
 ```
 
 ### Initialize Pipable:

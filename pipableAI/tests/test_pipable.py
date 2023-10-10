@@ -9,9 +9,9 @@ from pandas import DataFrame
 root_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_folder)
 
-from pipable import Pipable
-from pipable.interfaces.database_connector_interface import DatabaseConnectorInterface
-from pipable.interfaces.llm_api_client_interface import LlmApiClientInterface
+from pipableai import Pipable
+from pipableai.interfaces.database_connector_interface import DatabaseConnectorInterface
+from pipableai.interfaces.llm_api_client_interface import LlmApiClientInterface
 
 
 class TestPipable(unittest.TestCase):

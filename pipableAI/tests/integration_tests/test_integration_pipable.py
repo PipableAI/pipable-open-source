@@ -11,9 +11,9 @@ from unittest.mock import Mock, patch
 root_folder = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 sys.path.append(root_folder)
 
-from pipable import Pipable
-from pipable.core.postgresql_connector import PostgresConfig, PostgresConnector
-from pipable.interfaces.llm_api_client_interface import LlmApiClientInterface
+from pipableai import Pipable
+from pipableai.core.postgresql_connector import PostgresConfig, PostgresConnector
+from pipableai.interfaces.llm_api_client_interface import LlmApiClientInterface
 
 
 class MockLlmApiClient(LlmApiClientInterface):

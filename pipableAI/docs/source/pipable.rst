@@ -1,6 +1,6 @@
 .. _pipable-py:
 
-.. automodule:: pipable.pipable
+.. automodule:: pipableai.pipable
    :members:
    :undoc-members:
    :show-inheritance:

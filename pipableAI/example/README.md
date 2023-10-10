@@ -15,7 +15,7 @@ Before you begin, ensure you have the following software installed on your syste
 1. **Install Dependencies:**
 
     ```bash
-    pip3 install fastapi uvicorn
+    pip3 install pipableai fastapi uvicorn
     ```
 
 2. **Download and Prepare the Sample Database:**
