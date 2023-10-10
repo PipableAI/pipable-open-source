@@ -173,10 +173,10 @@ We welcome contributions from the community! To contribute to Pipable, follow th
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
 
-Please read our [Contribution Guidelines](CONTRIBUTING.md) for more details.
+Please read our [Contribution Guidelines](https://github.com/PipableAI/pipable-open-source/blob/main/pipableAI/CONTRIBUTING.md) for more details.
 
 ## License
 
-This project is licensed under the Apache 2.0 - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the Apache 2.0 - see the [LICENSE](https://github.com/PipableAI/pipable-open-source/blob/main/pipableAI/LICENSE) file for details.
 
 ---
