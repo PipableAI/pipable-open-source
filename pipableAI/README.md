@@ -1,8 +1,8 @@
-# Pipable 🚀
+# PipableAI 🚀
 
 ## About
 
-Pipable is a Python package that simplifies the process of querying a database. It provides a high-level interface for connecting to a remote database server, generating and executing natural language-based data search queries mapped to database queries using a language model.
+PipableAI is a Python package that simplifies the process of querying a database. It provides a high-level interface for connecting to a remote database server, generating and executing natural language-based data search queries mapped to database queries using a language model.
 
 ## Current Features
 
