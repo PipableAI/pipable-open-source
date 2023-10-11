@@ -127,7 +127,7 @@ class Pipable:
 
             # Generate CREATE TABLE statements in Python
             return [
-                f"CREATE TABLE {table_name} ({columns});"
+                f"CREATE TABLE {table_name} ({columns})"
                 for table_name, columns in grouped_columns.items()
             ]
 
@@ -156,7 +156,7 @@ class Pipable:
             self.connect()
 
             # Set default context
-            context = " ".join(self.all_table_queries)
+            context = ";".join(self.all_table_queries)
 
             # Generate CREATE TABLE statements for the specified tables
             if table_names and len(table_names) > 0:
@@ -164,7 +164,7 @@ class Pipable:
                     table_names
                 )
                 # Concatenate create table statements into a single line for context
-                context = " ".join(create_table_statements)
+                context = ";".join(create_table_statements)
 
             # Generate SQL query from LLM
             sql_query = self._generate_sql_query(context, question)
@@ -195,7 +195,7 @@ class Pipable:
             self.connect()
 
             # Set default context
-            context = " ".join(self.all_table_queries)
+            context = ";".join(self.all_table_queries)
 
             # Generate CREATE TABLE statements for the specified tables
             if table_names and len(table_names) > 0:
@@ -203,7 +203,7 @@ class Pipable:
                     table_names
                 )
                 # Concatenate create table statements into a single line for context
-                context = " ".join(create_table_statements)
+                context = ";".join(create_table_statements)
 
             # Generate SQL query from LLM
             sql_query = self._generate_sql_query(context, question)
