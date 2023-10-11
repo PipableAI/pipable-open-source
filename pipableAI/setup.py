@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="pipableai",
-    version="0.1.2",
+    version="0.1.3",
     description="Simplify the process of connecting to remote PostgreSQL servers and executing natural language-based data search queries.",
     long_description=long_description,
     long_description_content_type="text/markdown",
