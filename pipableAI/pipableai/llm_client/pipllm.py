@@ -59,9 +59,6 @@ class PipLlmApiClient(LlmApiClientInterface):
 
         Returns:
             str: The generated SQL query.
-
-        Raises:
-            requests.exceptions.RequestException: If there is an issue with the API request.
         """
         endpoint = "/generate"
         url = self.api_base_url + endpoint
@@ -69,6 +66,21 @@ class PipLlmApiClient(LlmApiClientInterface):
         response = self._make_post_request(url, data)
         return response.get("output")
 
+    def train_llm(self, dataset_path: str):
+        """Train llm on custom queries.
+
+        Args:
+            dataset_path (str): The path of json dataset.
+
+        Returns:
+            str: The response returned by server.
+        """
+        endpoint = "/train"
+        url = self.api_base_url + endpoint
+        data = {"dataset_path": dataset_path}
+        response = self._make_post_request(url, data)
+        return response
+    
     def _make_post_request(self, url, data):
         """Make a POST request to the specified URL with the provided data.
 
